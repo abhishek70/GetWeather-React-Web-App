@@ -30,6 +30,7 @@ module.exports = {
       openWeatherMap:'app/api/openWeatherMap.jsx',
       Loader:'app/components/Loader.jsx',
       ErrorMessage:'app/components/ErrorMessage.jsx',
+      Expire:'app/components/Expire.jsx'
     },
     extensions:['','.js','.jsx']
   },

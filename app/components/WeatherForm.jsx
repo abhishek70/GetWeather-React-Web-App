@@ -2,10 +2,9 @@ var React = require('react');
 var {FormGroup, FormControl} = require('react-bootstrap');
 
 var WeatherForm = React.createClass({
-
   getInitialState: function() {
     return {
-      unit: 'imperial',
+      unit: this.props.unit,
       location:'',
       errorState:null,
     }

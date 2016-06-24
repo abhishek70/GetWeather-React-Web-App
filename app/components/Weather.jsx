@@ -7,6 +7,11 @@ var Loader          = require('Loader');
 var ErrorMessage    = require('ErrorMessage');
 
 var Weather = React.createClass({
+  getDefaultProps:function(){
+    return{
+      unit:'imperial'
+    }
+  },
   getInitialState:function(){
     return{
       isLoading:false,
@@ -55,10 +60,21 @@ var Weather = React.createClass({
     return(
       <Container>
         <h1>Get Weather</h1>
-        <WeatherForm onSearch={this.handleSearch}/>
+        <WeatherForm onSearch={this.handleSearch} unit={this.props.unit}/>
         {renderMessage()}
       </Container>
     )
+  },
+  componentDidMount:function(){
+    var location = this.props.location.query.location;
+    var formData = {}
+    if(location && location.length > 0){
+      formData.location = location;
+      formData.unit = this.props.unit;
+      this.handleSearch(formData);
+      window.location.hash = '#/';
+    }
+
   }
 });
 
