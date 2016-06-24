@@ -1,5 +1,5 @@
 # GetWeather-React-Web-App
-GetWeather Web App using React JS, Webpack, Node JS & Bootstrap
+GetWeather Web App using React JS, Webpack, Node JS, Bootstrap & Heroku for deploying.
 
 Steps after downloading the repo:
 
