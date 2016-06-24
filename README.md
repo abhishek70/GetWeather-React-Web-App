@@ -9,4 +9,4 @@ Steps after downloading the repo:
 4. Go to http://localhost:3000 to view the web app.
 
 
-<a href="http://shrouded-tor-84344.herokuapp.com/">DEMO</a>
+<a href="http://shrouded-tor-84344.herokuapp.com/" target="_blank">DEMO</a>
